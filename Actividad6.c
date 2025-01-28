@@ -6,7 +6,11 @@ int main(void)
     printf("Indicar cantidad a devolver\n");
     scanf("%f", &devolver);
     printf("%d Monedas de 50\n" ,devolver);
-    a=a
+    a=0
+    b=0
+    c=0
+    d=0
 
+    
     return 0;
 }
