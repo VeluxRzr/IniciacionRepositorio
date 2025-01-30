@@ -11,17 +11,17 @@ int main(void)
     printf("cantidad de naranja vendida ");
     scanf("%d", &naranja);
     printf("precio de la naranja ");
-    sacanf("%f" , &precionaranja);
+    scanf("%f" , &precionaranja);
     printf("cantidad de limon vendida ");
     scanf("%d" , &limon);
-    printf("precio del limon" );
+    printf("precio del limon " );
     scanf("%f" , &preciolimon);
 
-    printf(" Producto   Ventas   Precio   Total\n");
-    printf(" Cola       %d       %f       %f     " ,cola,preciocola,preciocola*cola);
-    printf(" Naranja    %d       %F       %f     " ,naranja,precionaranja,precionaranja*naranja);
-    printf(" Limon      %d       %f       %f     " ,limon,preciolimon,preciolimon*limon);
-    printf("                    TOTAL     %F     " ,(preciocola*cola)+(preciolimon*limon)+(precionaranja*naranja));
-
+    printf("Producto Ventas  Precio  Total\n");
+    printf("Cola     %d       %.2f    %.2f     \n" ,cola,preciocola,preciocola*cola);
+    printf("Naranja  %d       %.2F    %.2f     \n" ,naranja,precionaranja,precionaranja*naranja);
+    printf("Limon    %d       %.2f    %.2f     \n" ,limon,preciolimon,preciolimon*limon);
+    printf("TOTAL    %.2F      " , (preciocola*cola+precionaranja*naranja+preciolimon*limon)); 
+    
     return 0;
 }
