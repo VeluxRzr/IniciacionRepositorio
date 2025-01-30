@@ -8,12 +8,11 @@ int main(void)
 
     if (sueldo>3000)
     {
-        printf(" Debe abonar impuestos ");
+        printf(" Debe pagar impuestos ");
     }
     else
     {
-        
+        printf(" Esta exento de impuestros ");
     }
-    
     return 0;
 }
