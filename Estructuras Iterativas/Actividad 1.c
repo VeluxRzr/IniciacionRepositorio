@@ -1,24 +1,23 @@
 #include <stdio.h>
 int main(void)
 {
-    int i,sumPares,sumImpares,promPares;
+    int i,sumPares=0,sumImpares=0,promPares;
     float promImpares;
     
-    (sumImpares/100)=(float)promImpares;
-    sumPares/100=promPares;
-
-    for (i=2;i<=200;i+2)
-    {    
-        sumPares=sumPares+i;
+    for (i=2;i<=200;i+=2) {    
+        sumPares+=i;
+        printf(" La suma de pares seria %d\n" , sumPares);
     }
-    for (i=1;i<=199;i+2)
-    {
-        sumImpares=sumImpares+i;
+    for (i=1;i<=199;i+=2) {
+        printf(" La suma de impares seria %d\n" , sumImpares);
+        sumImpares+=i;
     }  
-    printf(" La suma de pares seria %d\n" , sumPares);
-    printf(" La suma de impares seria %d\n" , sumImpares);
-    printf(" El promedio de pares seria %d\n" , promPares);
-    printf(" El promedio de impares seria %f\n" , (float)promImpares);
-  
+    
+    promPares=sumPares/100;
+    promImpares=sumImpares/100;
+
+    printf(" El promedio de pares es %d\n" , promPares);
+    printf(" El promedio de impares es de %.2f" , (float)promImpares);
+
     return 0;
 }
