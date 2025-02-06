@@ -3,7 +3,7 @@
 int main(void)
 {
     int tabla[3][2];
-    int i,j;
+    int i,j,filaMax,filaMin,tablaMax,tablaMin;
 
     for (i=0;i<3;i++)
     {
@@ -13,8 +13,7 @@ int main(void)
          scanf("%d" , &tabla[i][j]);
         }
     }   
-           
-    for  (i = 0; i < 3; i++)
+        for  (i = 0; i < 3; i++)
     {
         for (j = 0; j < 2; j++)
         {
@@ -22,5 +21,11 @@ int main(void)
         }
         printf("\n");
     }
+    
+    
+    
+    
+    
+    
     return 0;
 }
