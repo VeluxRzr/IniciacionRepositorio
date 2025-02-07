@@ -1,27 +1,37 @@
 #include <stdio.h>
 int main(void)
 {
-    int num1,num2,num3
+    int a,b,c;
     
     printf("Introduzca el primer numero\n");
-    scanf("%d" , num1);
+    scanf("%d" , &a);
     printf("Introduzca segundo numero\n");
-    scanf("%d" , num2);
+    scanf("%d" , &b);
     printf("Introduzca tercer numero\n");
-    scanf("%d" , num3);
-
-    if (num1<num2<num3)
-    {
-        printf("%d" , num3);
-        printf("%d" , num2);
-        printf("%d" , num1);
-    }   else if (num3<num1<num1);
-    {
-        printf("%d" , num1);
-        printf("%d" , num3);
-        printf("%d" , num1);
+    scanf("%d" , &c);
+  
+  if (a >= b && a >= c) {
+        printf("%d ", a);
+        if (b >= c) {
+            printf("%d %d\n", b, c);
+        } else {
+            printf("%d %d\n", c, b);
+        }
+    } else if (b >= a && b >= c) {
+        printf("%d ", b);
+        if (a >= c) {
+            printf("%d %d\n", a, c);
+        } else {
+            printf("%d %d\n", c, a);
+        }
+    } else {
+        printf("%d ", c);
+        if (a >= b) {
+            printf("%d %d\n", a, b);
+        } else {
+            printf("%d %d\n", b, a);
+        }
     }
-    
     
     
     
